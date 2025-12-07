@@ -847,7 +847,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding: 8rem 2rem 4rem;
+  padding: 4rem 2rem 4rem;
   animation: fadeInUp 1s ease-out;
 }
 
@@ -865,7 +865,7 @@ body {
   }
 
   .hero-content {
-    padding: 10rem 3rem 6rem;
+    padding: 6rem 3rem 6rem;
   }
 
   .hero-text-column {

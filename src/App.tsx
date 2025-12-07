@@ -34,7 +34,22 @@ import {
   Receipt,
   HelpCircle,
   BookOpen,
-  Mail
+  BookOpen,
+  Mail,
+  MapPin,
+  Award,
+  Star,
+  User,
+  Briefcase,
+  Users,
+  Clock,
+  Shield,
+  Lightbulb,
+  GraduationCap,
+  Sparkles,
+  ArrowRight,
+  ThumbsUp,
+  HeartHandshake
 } from 'lucide-react'
 import jsPDF from 'jspdf'
 import './App.css'
@@ -1326,11 +1341,15 @@ This email was sent from your website contact form via Brevo.
                 <span className="hero-title-line-1">Buy Your Home</span>
                 <span className="hero-title-line-2">with Confidence</span>
               </h1>
-              <p className="hero-subtitle">ELITE Agent at Real Broker 👩🏻‍💻</p>
-              <p className="hero-location">⚡️San Antonio|Houston|Dallas⚡️</p>
+              <p className="hero-subtitle">
+                <Award size={16} className="inline-icon" /> ELITE Agent at Real Broker <User size={16} className="inline-icon" />
+              </p>
+              <p className="hero-location">
+                <MapPin size={16} className="inline-icon" /> San Antonio | Houston | Dallas <MapPin size={16} className="inline-icon" />
+              </p>
               <button className="cta-button primary hero-cta" onClick={scrollToContact}>
                 BOOK CONSULTATION
-                <span className="arrow-icon">→</span>
+                <ArrowRight size={20} className="arrow-icon" />
               </button>
             </div>
             <div className="hero-image-wrapper">
@@ -1358,33 +1377,33 @@ This email was sent from your website contact form via Brevo.
       <section className="marquee-section">
         <div className="marquee-container">
           <div className="marquee-content">
-            <span className="marquee-item">4th Best Texas Realtor on Social Media</span>
+            <span className="marquee-item"><Award size={16} className="inline-icon" /> 4th Best Texas Realtor on Social Media</span>
             <span className="marquee-dot">•</span>
-            <span className="marquee-item">ELITE Agent at Real Broker</span>
+            <span className="marquee-item"><Star size={16} className="inline-icon" /> ELITE Agent at Real Broker</span>
             <span className="marquee-dot">•</span>
-            <span className="marquee-item">5.0 Perfect Client Rating</span>
+            <span className="marquee-item"><ThumbsUp size={16} className="inline-icon" /> 5.0 Perfect Client Rating</span>
             <span className="marquee-dot">•</span>
-            <span className="marquee-item">San Antonio • Houston • Dallas</span>
+            <span className="marquee-item"><MapPin size={16} className="inline-icon" /> San Antonio • Houston • Dallas</span>
             <span className="marquee-dot">•</span>
-            <span className="marquee-item">Buying • Selling • New Construction Specialist</span>
+            <span className="marquee-item"><Home size={16} className="inline-icon" /> Buying • Selling • New Construction Specialist</span>
             <span className="marquee-dot">•</span>
-            <span className="marquee-item">First-Time & Repeat Buyer Expert</span>
+            <span className="marquee-item"><Users size={16} className="inline-icon" /> First-Time & Repeat Buyer Expert</span>
             <span className="marquee-dot">•</span>
-            <span className="marquee-item">Serving San Antonio, Houston & Dallas</span>
+            <span className="marquee-item"><MapPin size={16} className="inline-icon" /> Serving San Antonio, Houston & Dallas</span>
             <span className="marquee-dot">•</span>
-            <span className="marquee-item">4th Best Texas Realtor on Social Media</span>
+            <span className="marquee-item"><Award size={16} className="inline-icon" /> 4th Best Texas Realtor on Social Media</span>
             <span className="marquee-dot">•</span>
-            <span className="marquee-item">ELITE Agent at Real Broker</span>
+            <span className="marquee-item"><Star size={16} className="inline-icon" /> ELITE Agent at Real Broker</span>
             <span className="marquee-dot">•</span>
-            <span className="marquee-item">5.0 Perfect Client Rating</span>
+            <span className="marquee-item"><ThumbsUp size={16} className="inline-icon" /> 5.0 Perfect Client Rating</span>
             <span className="marquee-dot">•</span>
-            <span className="marquee-item">San Antonio • Houston • Dallas</span>
+            <span className="marquee-item"><MapPin size={16} className="inline-icon" /> San Antonio • Houston • Dallas</span>
             <span className="marquee-dot">•</span>
-            <span className="marquee-item">Buying • Selling • New Construction Specialist</span>
+            <span className="marquee-item"><Home size={16} className="inline-icon" /> Buying • Selling • New Construction Specialist</span>
             <span className="marquee-dot">•</span>
-            <span className="marquee-item">First-Time & Repeat Buyer Expert</span>
+            <span className="marquee-item"><Users size={16} className="inline-icon" /> First-Time & Repeat Buyer Expert</span>
             <span className="marquee-dot">•</span>
-            <span className="marquee-item">Serving San Antonio, Houston & Dallas</span>
+            <span className="marquee-item"><MapPin size={16} className="inline-icon" /> Serving San Antonio, Houston & Dallas</span>
             <span className="marquee-dot">•</span>
           </div>
         </div>
@@ -2325,7 +2344,7 @@ This email was sent from your website contact form via Brevo.
           <div className="priority-content">
             <div className="priority-visual">
               <div className="house-icon locked"><Home size={48} /></div>
-              <div className="arrow">→</div>
+              <div className="arrow"><ArrowRight size={32} /></div>
               <div className="house-icon unlocked"><Home size={48} /></div>
             </div>
             <p className="priority-text">
@@ -3038,7 +3057,7 @@ This email was sent from your website contact form via Brevo.
           {showSuccessModal && (
             <div className="success-modal-overlay" onClick={closeSuccessModal}>
               <div className="success-modal" onClick={(e) => e.stopPropagation()}>
-                <div className="success-icon">✓</div>
+                <div className="success-icon"><CheckCircle size={48} /></div>
                 <h3>Thank You!</h3>
                 <p>We've received your information and will be in touch soon to schedule your buyer consultation.</p>
                 <button className="cta-button primary" onClick={closeSuccessModal}>Got It!</button>
