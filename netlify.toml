@@ -1,0 +1,11 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# Brevo API Key Configuration:
+# 1. Go to Netlify Dashboard → Site Settings → Environment Variables
+# 2. Add variable: VITE_BREVO_API_KEY
+# 3. Value: Your Brevo API key (starts with xkeysib-)
+# 4. See NETLIFY_ENV_SETUP.md for detailed instructions
+# 5. After adding, trigger a new deployment
+
