@@ -3107,8 +3107,8 @@ This email was sent from your website contact form via Brevo.
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              src="/images/marisol-profile.jpg"
-              alt="Marisol Gallegos - Real Estate Agent"
+              src="/images/samantha-profile-4.png"
+              alt="Samantha Martinez - Real Estate Agent"
               className="photo-modal-image"
               loading="lazy"
             />
