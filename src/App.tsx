@@ -34,7 +34,6 @@ import {
   Receipt,
   HelpCircle,
   BookOpen,
-  BookOpen,
   Mail,
   MapPin,
   Award,
